@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>🎟 Ticket Management</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>🎟 Train Booking System — Tickets</header>
+
+  <div class="container">
+    <a href="/tickets/new" class="btn">➕ Book New Ticket</a>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User</th>
+          <th>Train</th>
+          <th>Booking Date</th>
+          <th>Final Price (₹)</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="ticket : ${tickets}">
+          <td th:text="${ticket.id}"></td>
+          <td th:text="${ticket.user.name}"></td>
+          <td th:text="${ticket.train.name}"></td>
+          <td th:text="${ticket.bookingDate}+'%'"></td>
+          <td th:text="${ticket.finalPrice}"></td>
+          <td>
+            <a th:href="@{'/tickets/edit/' + ${ticket.id}}" class="btn btn-edit"> Edit</a>
+            <a th:href="@{'/tickets/delete/' + ${ticket.id}}" class="btn btn-delete">Delete</a>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

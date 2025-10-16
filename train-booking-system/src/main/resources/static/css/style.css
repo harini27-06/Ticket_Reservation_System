@@ -1,0 +1,148 @@
+/* =======================
+   🌐 Global Styles
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🌸 Background with train shadow image */
+body {
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  color: #333;
+  min-height: 100vh;
+  background-image: 
+    url("https://png.pngtree.com/png-vector/20221102/ourmid/pngtree-train-railway-icon-cartoon-illustration-vector-png-image_6405738.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 600px;
+  background-attachment: fixed;
+  opacity: 0.98;
+}
+
+/* 🌷 Header */
+header {
+  background-color: #ec407a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 10px rgba(236, 64, 122, 0.3);
+  border-bottom: 4px solid #f06292;
+}
+
+/* 🌼 Container */
+.container {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.95);
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(236, 64, 122, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+/* 🌺 Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  color: #ad1457;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #f48fb1;
+  border-radius: 8px;
+  transition: 0.3s;
+  background-color: #fff0f5;
+}
+
+input:focus, select:focus {
+  border-color: #ec407a;
+  outline: none;
+  box-shadow: 0 0 6px #f8bbd0;
+}
+
+/* 💗 Buttons */
+button {
+  background-color: #ec407a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #f06292;
+}
+
+/* 🩷 Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #f8bbd0;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f48fb1;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #fff0f6;
+}
+
+tr:hover {
+  background-color: #ffe4ec;
+  transition: 0.3s;
+}
+
+/* 🌸 Link Buttons */
+a.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #ec407a;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+a.btn:hover {
+  background-color: #f06292;
+}
+
+/* ✅ Edit and Delete Button Colors */
+a.btn-edit {
+  background-color: #66bb6a; /* soft green */
+}
+
+a.btn-edit:hover {
+  background-color: #81c784;
+}
+
+a.btn-delete {
+  background-color: #e57373; /* soft red */
+}
+
+a.btn-delete:hover {
+  background-color: #ef5350;
+}
